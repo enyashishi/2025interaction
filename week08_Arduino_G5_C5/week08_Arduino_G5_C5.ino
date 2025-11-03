@@ -9,7 +9,7 @@ void setup() {
 }
 void serialEvent(){
   while(Serial.available()){
-    char now = Serial,read();
+    char now = Serial.read();
     if (now=='R'){
       tone(8,784,100); // 聲音SO
       delay(100);
